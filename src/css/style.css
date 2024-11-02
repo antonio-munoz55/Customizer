@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Variables */
+    --background-color: #fff5e1;
+    --darkness-color: #0f0f0f;
+    --white-color: #ffffff;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border-radius: 12px;
+    background-color: var(--background-color);
+    border: 1px solid var(--darkness-color);
+    padding: 12px;
+    box-shadow: 5px 5px 8px var(--darkness-color);
+}
+
+#options{
+    width: 24%;
+    border: 2px dotted var(--darkness-color);
+    padding: 8px;
+}
+
+#options>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+#options>div:nth-child(1)>input{
+    border: 0;
+    padding: 8px;
+    border-bottom: 2px solid var(--darkness-color);
+}
+
+#options>div:nth-child(2)>input,
+#options>div:nth-child(3)>input{
+    width: 100%;
+}
+
+#options>div:nth-child(4){
+    margin-top: 8px;
+}
+
+#options>div:nth-child(5){
+    margin-bottom: 8px;
+}
+
+#imagesContainer{
+    height: 68%;
+    overflow: auto;
+    border-bottom: 2px solid var(--darkness-color);
+}
+
+#imagesContainer>img{
+    height: 200px;
+    width: 120px;
+    border: 4px double var(--darkness-color);
+    background-color: var(--white-color);
+}
+
+#t-shirt{
+    width: 76%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#t-shirt>:nth-child(1){
+    width: 400px;
+    filter: drop-shadow(2px 2px 10px var(--darkness-color));
+}
+
+#t-shirt>:nth-child(2){
+    color: var(--white-color);
+    position: absolute;
+    transform: translate(-75px, -150px);
+    font-family: 'Cinzel', serif, Arial;
+}
+
+#t-shirt>:nth-child(3){
+    color: var(--white-color);
+    position: absolute;
+    transform: translate(0, 150px);
+    font-family: 'Cinzel', serif, Arial;
+}
+
+#t-shirt>:nth-child(4){
+    height: 275px;
+    position: absolute;
+    transform: translate(0, -10px);
+    filter: drop-shadow(1px 1px 5px rgb(231, 231, 231, 0.4));
+}
+
+#t-shirt>:nth-child(5){
+    height: 90px;
+    position: absolute;
+    transform: scaleX(-1) translate(-80px, -150px);
+    filter: drop-shadow(1px 1px 5px rgb(231, 231, 231, 0.4));
+}
+
+#t-shirt>:nth-child(6){
+    text-shadow: 2px 2px 4px var(--darkness-color);
+}
+
+/* Responsive styles */
+@media (max-width: 480px){
+    body{
+        height: auto;
+    }
+
+    main{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 8px;
+        box-shadow: none;
+    }
+
+    #options{
+        width: 100%;
+        margin-bottom: 12px;
+        border: none;
+    }
+
+    #t-shirt{
+        width: 100%;
+    }
+
+    #t-shirt>:nth-child(1){
+        width: 80%;
+    }
+
+    #imagesContainer>img{
+        height: 190px;
+        width: 110px;
+    }
+
+    #imagesContainer{
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script type="module" src="./src/js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <title>Customizer</title>
+</head>
+<body>
+    <main>
+        <!-- Main options container -->
+        <div id="options">
+            <!-- Input field for entering the title -->
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" maxlength="10">
+            </div>
+
+            <!-- Sliders for adjusting the X position -->
+            <div>
+                <input type="range" min="0" max="10" id="progressBarX">
+            </div>
+
+            <!-- Sliders for adjusting the Y position -->
+            <div>
+                <input type="range" min="0" max="10" id="progressBarY">
+            </div>
+
+            <!-- Color options for the t-shirt -->
+            <div>
+                <input type="radio" id="colorBlack" name="color" value="black" checked>
+                <label for="colorBlack">Black</label>
+            </div>
+            <div>
+                <input type="radio" id="colorWhite" name="color" value="white">
+                <label for="colorWhite">White</label>
+            </div>
+            <p>Images (drag to t-shirt):</p>
+            <!-- Container for images that can be dragged into the t-shirt -->
+            <div id="imagesContainer">
+                <!-- Images of characters, each draggable -->
+                <img src="./src/img/adewale.png" alt="Image of Adewale" draggable="true">
+                <img src="./src/img/alexios.png" alt="Image of Alexios" draggable="true">
+                <img src="src/img/alonzo.png" alt="Image of Alonzo" draggable="true">
+                <img src="./src/img/altair.png" alt="Image of Altair" draggable="true">
+                <img src="./src/img/arbaaz.png" alt="Image of Arbaaz" draggable="true">
+                <img src="./src/img/arno.png" alt="Image of Arno" draggable="true">
+                <img src="./src/img/aveline.png" alt="Image of Aveline" draggable="true">
+                <img src="./src/img/basim.png" alt="Image of Basim" draggable="true">
+                <img src="./src/img/bayek.png" alt="Image of Bayek" draggable="true">
+                <img src="./src/img/connor.png" alt="Image of Connor" draggable="true">
+                <img src="./src/img/edward.png" alt="Image of Edward" draggable="true">
+                <img src="./src/img/eivor1.png" alt="Image of Eivor1" draggable="true">
+                <img src="./src/img/eivor2.png" alt="Image of Eivor2"draggable="true">
+                <img src="./src/img/evie.png" alt="Image of Evie" draggable="true">
+                <img src="./src/img/ezio.png" alt="Image of Ezio" draggable="true">
+                <img src="./src/img/haytham.png" alt="Image of Haytham" draggable="true">
+                <img src="./src/img/jacob.png" alt="Image of Jacob" draggable="true">
+                <img src="./src/img/kassandra.png" alt="Image of Kassandra" draggable="true">
+                <img src="./src/img/nikolai.png" alt="Image of Nikolai" draggable="true">
+                <img src="./src/img/shao.png" alt="Image of Shao" draggable="true">
+                <img src="./src/img/shay.png" alt="Image of Shay" draggable="true">
+            </div>
+        </div>
+
+        <!-- Container for the t-shirt and related visual elements -->
+        <div id="t-shirt">
+            <img class="dropperContainer" src="./src/img/t-shirt_black.png" alt="Black t-shirt">
+            <p class="name">Name</p>
+            <h3 class="characterName">CHARACTER</h3>
+            <!-- Images of the character that will appear on the t-shirt -->
+            <img class="characterImage" src="./src/img/ezio.png" alt="Image of Ezio">
+            <img class="characterImage" src="./src/img/ezio.png" alt="Image of Ezio">
+            <h1>Custom your T-shirt</h1>
+        </div>
+    </main>
+</body>
+</html>
+
